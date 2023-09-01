@@ -16,6 +16,6 @@ public class Petshop {
     }
 
     public String toString(){
-        return "Nome: "+nome+ " | Idade: "+idade;
+        return "Nome: "+nome+ " | Idade: "+ idade;
     }
 }

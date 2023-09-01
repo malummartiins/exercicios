@@ -1,5 +1,6 @@
 public class Principal {
     public static void main(String[] args) {
+       
         Ps pet = new Ps(5);
         System.out.println("*** INSERINDO PETS ***");
         for (int i=0; i<7; i++){
@@ -12,7 +13,7 @@ public class Principal {
             else
                 inseriu = pet.inserePet(new Papagaio("Papapaio "+i, i));
             if (inseriu)
-                System.out.println("Pet inserido com sucesso");
+                System.out.println("Pet inserido com sucesso!!");
             else
                 System.out.println("Pet não inserido");
         }
