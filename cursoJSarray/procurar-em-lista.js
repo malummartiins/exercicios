@@ -10,13 +10,14 @@ const lista = [alunos, medias];
 
 function exibeNomeeNota (aluno){
     if (lista[0].includes(aluno)){ //includes() determina se um array contém um determinado elemento retornando true or false.
-        const indice = lista[0].indexOf(aluno); //retorna o indice da primeira ocorrencia do valor fornecido
-        const mediaAluno = lista[1][indice]; //entrando 2 array
+      const [alunos,medias] = lista; //desestruturando um array 
+      const indice = alunos.indexOf(aluno); //retorna o indice da primeira ocorrencia do valor fornecido
+        const mediaAluno = medias[indice]; //entrando 2 array
         console.log(`${aluno} tem a média ${mediaAluno}`);
      } else {
         console.log('Estudante não encontrado');
      }
 }
 
-exibeNomeeNota('Caio');
+exibeNomeeNota('Ana');
 exibeNomeeNota('Malu');
