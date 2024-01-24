@@ -1,3 +1,8 @@
+package exercJava;
+
+import exercJava.Cachorro;
+import exercJava.Petshop;
+
 public class Ps {
     private Petshop[] pets;
 

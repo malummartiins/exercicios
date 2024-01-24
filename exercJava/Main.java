@@ -1,3 +1,5 @@
+package exercJava;
+
 import java.util.Scanner;
 
 public class Main {

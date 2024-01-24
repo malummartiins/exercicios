@@ -1,3 +1,8 @@
+package exercJava;
+
+import exercJava.Cachorro;
+import exercJava.Gato;
+
 public class Principal {
     public static void main(String[] args) {
        
@@ -7,9 +12,9 @@ public class Principal {
             double sorteio = Math.random();
             boolean inseriu = false;
             if (sorteio < 0.33)
-                inseriu = pet.inserePet(new Cachorro("Cachorro "+i, i));
+                inseriu = pet.inserePet(new Cachorro("exercJava.Cachorro "+i, i));
             else if (sorteio < 0.66)
-                inseriu = pet.inserePet(new Gato("Gato "+i, i));
+                inseriu = pet.inserePet(new Gato("exercJava.Gato "+i, i));
             else
                 inseriu = pet.inserePet(new Papagaio("Papapaio "+i, i));
             if (inseriu)
@@ -21,7 +26,7 @@ public class Principal {
         pet.imprimePets();
 
         System.out.println("\n*** REMOÇÃO DE PETS ***");
-        Petshop removido = pet.removePet("Gato 3");
+        Petshop removido = pet.removePet("exercJava.Gato 3");
         if (removido == null)
             System.out.println("Pet não encontrado");
         else

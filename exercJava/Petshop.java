@@ -1,3 +1,5 @@
+package exercJava;
+
 public class Petshop {
     private String nome;
     private int idade;

@@ -1,3 +1,4 @@
+package exercJava;
 
 public class Cachorro extends Petshop {
     public Cachorro (String nome, int idade){
