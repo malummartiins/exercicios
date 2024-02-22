@@ -1,6 +1,6 @@
 //new serve para criarmos instancias atraves de uma função construtora
 
-/*function User(nome,email){
+function User(nome,email){
     this.nome = nome
     this.email = email
 
@@ -20,10 +20,10 @@ function Admin(role){
 Admin.prototype = Object.create(User.prototype)  //estamos criando um objt e passando por parametro o prototipo
 const novoUser = new Admin ('admin')            // criar um novo obj a partir do construtor - porem (user esta agindo como protipo)
 console.log(novoUser.exibirInfos());           //conseguimos chamar as funções
-console.log(novoUser.role);*/
+console.log(novoUser.role);
 
-const user = {
+/*const user = {
     exibirInfos: function(nome){
         return nome
     }
-}
+}*/
