@@ -22,7 +22,7 @@ public class ContaCorrente  extends ContaBancaria{
 
     @Override
     public void tiraExtrato() {
-
+        System.out.println(this.toString());
         quantTransacoes++;
     }
 
@@ -38,6 +38,6 @@ public class ContaCorrente  extends ContaBancaria{
     public String toString() {
         return "ContaCorrente{" +
                 "quantTransacoes=" + quantTransacoes +
-                '}';
+                "} " + super.toString();
     }
 }
