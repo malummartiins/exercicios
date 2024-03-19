@@ -60,6 +60,10 @@ public class ExerciciosArrays {
     }
 
     public  int [][] exerc2(){
+
+//      Exercício 2: Crie um método que retorna uma matriz de inteiros com números aleatórios positivos
+//      menores que 100. O tamanho da matriz deve ser solicitado pelo teclado dentro do método.
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Informe o número de linhas");
         int linhas = Integer.parseInt(scanner.next());
@@ -71,11 +75,35 @@ public class ExerciciosArrays {
         for (int i = 0; i < retorno.length; i++)
             for (int j = 0; j < retorno[i].length; j++)
                 retorno[i][j]= (int)(Math.random()*100);
-        
+
         return retorno;
+    }
+
+    public void imprimeArray (int [][] array){
+        for (int i = 0; i < array.length; i++){
+            for (int j = 0; j < array[i].length; j++)
+                System.out.print(array[i][j] + " ");
+            System.out.println();
+        }
+    }
+
+    public double [][] exerc3 (){
+        Scanner scanner = new Scanner(System.in);
+        double [][] array = new double[2][5];
+
+        for (int i = 0; i < array.length; i++)
+            for (int j = 0; j < array[i].length; i++){
+                System.out.println("Digite o próximo valor:");
+                array[i][j]= Double.parseDouble(scanner.next());
+            }
+        return  array;
+
 
     }
+
     public static void main(String[] args) {
  //       System.out.println(new ExerciciosArrays().exercicio1d());
+        ExerciciosArrays ex = new ExerciciosArrays();
+        ex.imprimeArray(ex.exercicio1d());
     }
 }
